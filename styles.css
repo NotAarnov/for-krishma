@@ -5,7 +5,6 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden; /* Prevent scrolling */
     background-color: #ff66b2; /* Pink background */
 }
 
@@ -16,8 +15,6 @@ body {
 
 .container img {
     max-width: 100%; /* Set maximum width to prevent image overflow */
-    max-height: 100%; /* Set maximum height to prevent image overflow */
-    width: auto; /* Let the browser automatically adjust the width */
     height: auto; /* Let the browser automatically adjust the height */
 }
 
@@ -29,15 +26,15 @@ body {
 }
 
 h1 {
-    color: #ff66b2; /* White text color */
-    font-size: 50px;
+    color: #ff66b2; /* Pink text color */
+    font-size: 24px; /* Adjust font size for mobile */
 }
 
 button {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Adjust button font size for mobile */
     margin: 10px;
     padding: 9px 18px;
-    background-color: #FEA3B1; /* Mint Green for the "Yes" button */
+    background-color:  #FEA3B1; /* Mint Green for the "Yes" button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -47,7 +44,6 @@ button {
 
 button#noBtn {
     background-color: #a881af; /* Soft Pink for the "No" button */
-    color: white;
 }
 
 /* Add a hover effect for the buttons */
@@ -65,9 +61,8 @@ button:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Adjust width as needed */
-    max-width: 300px;
-    background-color: #fff;
+    width: 300px; /* Adjust width as needed */
+    background-color: #fff; /* White background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
