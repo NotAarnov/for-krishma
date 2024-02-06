@@ -1,46 +1,33 @@
 body {
     font-family: 'Great Vibes', cursive;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
     background-color: #ff66b2;
-    /* Pink background */
+    margin: 0;
 }
 
 .container {
     text-align: center;
-    position: relative;
+    padding: 20px;
 }
 
 .container img {
-    width: 630px;
-    /* set the desired width */
+    max-width: 100%;
     height: auto;
-    /* maintain aspect ratio */
 }
 
 .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 20px;
 }
 
 h1 {
     color: #ff66b2;
-    /* White text color */
-    font-size: 50px;
-
-
+    font-size: 30px;
 }
 
 button {
-    font-size: 1rem;
+    font-size: 18px;
+    padding: 10px 20px;
     margin: 10px;
-    padding: 9px 18px;
-    background-color:  #FEA3B1; /* Mint Green for the "Yes" button */
+    background-color:  #FEA3B1;
     color: white;
     border: none;
     border-radius: 5px;
@@ -49,33 +36,25 @@ button {
 }
 
 button#noBtn {
-    background-color:#a881af
-
-    ; /* Soft Pink for the "No" button */
-    color: white;
+    background-color:#a881af;
 }
 
-/* Add a hover effect for the buttons */
 button:hover {
     background-color:#FC6C85;
 }
 
-/* Add a subtle box-shadow to the buttons for a raised effect */
-button:active {
-    box-shadow: 0 2px #666;
-}
-
-
 .popup {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px; /* Adjust width as needed */
+    width: 80%;
+    max-width: 300px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     z-index: 9999;
 }
 
@@ -83,20 +62,10 @@ button:active {
     text-align: center;
 }
 
-.popup h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-.popup p {
-    font-size: 16px;
-    color: #666;
-}
-
 .popup button {
-    margin-top: 20px; /* Add space between content and button */
+    margin-top: 20px;
     padding: 10px 20px;
-    background-color: #FF4081; /* Pink background */
+    background-color: #FF4081;
     color: white;
     border: none;
     border-radius: 5px;

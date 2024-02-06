@@ -1,4 +1,3 @@
-
 function showResponse(response) {
     if (response === 'No') {
         document.getElementById('noBtn').innerText = getRandomWord();
