@@ -16,7 +16,7 @@ function getRandomWord() {
         'Eternal Bliss',
         'Forever and Always',
         'In Your Arms',
-        'Destined'];
+        'Destined to be Together'];
     const randomIndex = Math.floor(Math.random() * words.length);
     return words[randomIndex];
 }

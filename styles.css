@@ -1,5 +1,5 @@
 body {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Comic Sans MS', cursive; /* Change font to Comic Sans MS */
     display: flex;
     justify-content: center;
     align-items: center;
