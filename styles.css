@@ -1,33 +1,41 @@
 body {
     font-family: 'Great Vibes', cursive;
-    background-color: #ff66b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #ff66b2; /* Pink background */
 }
 
 .container {
     text-align: center;
-    padding: 20px;
+    position: relative;
 }
 
 .container img {
-    max-width: 100%;
-    height: auto;
+    width: 630px; /* set the desired width */
+    height: auto; /* maintain aspect ratio */
 }
 
 .content {
-    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1 {
-    color: #ff66b2;
-    font-size: 30px;
+    color: #ff66b2; /* White text color */
+    font-size: 50px;
 }
 
 button {
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 1rem;
     margin: 10px;
-    background-color:  #FEA3B1;
+    padding: 9px 18px;
+    background-color: #FEA3B1; /* Mint Green for the "Yes" button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -36,25 +44,31 @@ button {
 }
 
 button#noBtn {
-    background-color:#a881af;
+    background-color: #a881af; /* Soft Pink for the "No" button */
+    color: white;
 }
 
+/* Add a hover effect for the buttons */
 button:hover {
-    background-color:#FC6C85;
+    background-color: #FC6C85;
+}
+
+/* Add a subtle box-shadow to the buttons for a raised effect */
+button:active {
+    box-shadow: 0 2px #666;
 }
 
 .popup {
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 80%; /* Adjust width as needed */
     max-width: 300px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
     z-index: 9999;
 }
 
@@ -62,10 +76,20 @@ button:hover {
     text-align: center;
 }
 
+.popup h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.popup p {
+    font-size: 16px;
+    color: #666;
+}
+
 .popup button {
-    margin-top: 20px;
+    margin-top: 20px; /* Add space between content and button */
     padding: 10px 20px;
-    background-color: #FF4081;
+    background-color: #FF4081; /* Pink background */
     color: white;
     border: none;
     border-radius: 5px;
