@@ -1,0 +1,66 @@
+body {
+    font-family: 'Great Vibes', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ff66b2;
+    /* Pink background */
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.container img {
+    width: 630px;
+    /* set the desired width */
+    height: auto;
+    /* maintain aspect ratio */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: #ff66b2;
+    /* White text color */
+    font-size: 50px;
+
+
+}
+
+button {
+    font-size: 1rem;
+    margin: 10px;
+    padding: 9px 18px;
+    background-color:  #FEA3B1; /* Mint Green for the "Yes" button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#noBtn {
+    background-color:#a881af
+
+    ; /* Soft Pink for the "No" button */
+    color: white;
+}
+
+/* Add a hover effect for the buttons */
+button:hover {
+    background-color:#FC6C85;
+}
+
+/* Add a subtle box-shadow to the buttons for a raised effect */
+button:active {
+    box-shadow: 0 2px #666;
+}
