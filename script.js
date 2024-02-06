@@ -1,4 +1,4 @@
-script.js
+
 function showResponse(response) {
     if (response === 'No') {
         document.getElementById('noBtn').innerText = getRandomWord();
@@ -21,3 +21,16 @@ function getRandomWord() {
     const randomIndex = Math.floor(Math.random() * words.length);
     return words[randomIndex];
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var popup = document.getElementById("popup");
+    var closePopupButton = document.getElementById("closePopup");
+
+    // Show the popup when the page loads
+    popup.style.display = "block";
+
+    // Close the popup when the close button is clicked
+    closePopupButton.addEventListener("click", function() {
+        popup.style.display = "none";
+    });
+});
