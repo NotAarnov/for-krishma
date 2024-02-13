@@ -9,9 +9,8 @@ function showResponse(response) {
 function getRandomWord() {
     const words = ['Absolutely!', 
         'Forever Yours',
-        'You & Me Forever',
-        'Together Always',
-        'My Heart Says Yes',
+        'Forever and everr',
+        'Yesssss',
         'Dream Come True',
         'Eternal Bliss',
         'Forever and Always',
