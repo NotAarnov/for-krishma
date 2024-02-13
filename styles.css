@@ -1,5 +1,5 @@
 body {
-    font-family: "Lobster";
+    font-family: 'Comic Sans MS'; /* Set the font-family to Comic Sans MS */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +31,7 @@ h1 {
 }
 
 button {
+    font-family: 'Comic Sans MS'; /* Set the font-family to Comic Sans MS */
     font-size: 0.9rem; /* Adjust button font size for mobile */
     margin: 10px;
     padding: 9px 18px;
